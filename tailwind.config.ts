@@ -18,6 +18,7 @@ const config: Config = {
 			},
       colors: {
         'black-russian': '#161618',
+        'green-idk': '#5C8374',
       },
     },
   },
