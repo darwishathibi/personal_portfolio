@@ -35,6 +35,6 @@ body {
 @layer base {
   @font-face {
     font-family: "SFPro";
-    src: url("/fonts/SF-Pro-Display-Medium.otf")
+    src: url("/fonts/SFPRODISPLAYMEDIUM.OTF")
   }
 }
