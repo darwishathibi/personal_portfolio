@@ -1,5 +1,5 @@
 const sentences =
-  "a network security student from IIUM, Malaysia with a passion for photography and tech. I enjoy developing software and tackling CTF challenges, constantly honing my skills and expanding my knowledge in the digital world. I thrive on solving complex problems and always eager to learn and grow.";
+  "a network security student from IIUM, Malaysia with a passion for photography and tech. I enjoy developing software (but never release it, lol) and tackling CTF challenges, constantly honing my skills and expanding my knowledge in the digital world. I thrive on solving complex problems and always eager to learn and grow.";
 
 const highlightColor = "#5C8374";
 
@@ -41,7 +41,7 @@ function highlightText(
 export default function About() {
     return (
       <div className="flex flex-col items-center justify-center relative h-screen">
-        <div className="text-lg md:text-2xl lg:text-3xl space-y-4 w-5/12">
+        <div className="text-lg md:text-2xl lg:text-3xl space-y-4 w-5/12 leading-relaxed">
           {highlightText(sentences, highlightWords, highlightColor)}
         </div>
         <div className="absolute -top-32 right-0 text-[500px]">
