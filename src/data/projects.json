@@ -1,0 +1,30 @@
+[
+    {
+      "id": 1,
+      "title": "Personal Portfolio",
+      "description": "A personal portfolio website to showcase my projects and skills.",
+      "frameworks": ["Next.js", "Tailwind CSS", "Framer Motion"],
+      "github": "https://github.com/yourusername/portfolio",
+      "live": "https://yourportfolio.com",
+      "image": "https://yourportfolio.com/images/portfolio.png"
+    },
+    {
+      "id": 2,
+      "title": "Weather App",
+      "description": "A web app that displays real-time weather information using OpenWeatherMap API.",
+      "frameworks": ["React", "Tailwind CSS"],
+      "github": "https://github.com/yourusername/weather-app",
+      "live": "https://weatherapp.com",
+      "image": "https://yourweatherapp.com/images/weatherapp.png"
+    },
+    {
+      "id": 3,
+      "title": "Task Manager",
+      "description": "A task management app with CRUD operations and local storage.",
+      "frameworks": ["Vue.js", "Vuetify"],
+      "github": "https://github.com/yourusername/task-manager",
+      "live": null,
+      "image": "https://yourwebsite.com/images/taskmanager.png"
+    }
+  ]
+  
