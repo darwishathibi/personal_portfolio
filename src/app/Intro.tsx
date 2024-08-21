@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { TypewriterEffect } from "../components/ui/typewriter-effect";
 
 const highlightColor = "#5C8374";
 const checkboardColor = "border-solid border-2 border-sky-500";
@@ -12,6 +13,52 @@ const coloredWords = [
   },
   { word: "Photographer", color: highlightColor },
   { word: "Cyber Security", color: highlightColor },
+];
+
+const word1 =[
+  {
+    text: "a",
+  },
+  {
+    text: "Student.",
+    className: "text-green-idk",
+  },
+];
+
+const word2 = [
+  {
+    text: "a",
+  },
+  {
+    text: "Software",
+  },
+  {
+    text: "Developer.",
+    className: "text-green-idk",
+  },
+];
+
+const word3 = [
+  {
+    text: "a",
+  },
+  {
+    text: "Photographer.",
+    className: "text-green-idk",
+  },
+];
+
+const word4 = [
+  {
+    text: "a",
+  },
+  {
+    text: "Cyber Security",
+    className: "text-green-idk",
+  },
+  {
+    text: "Enthusiastic.",
+  },
 ];
 
 export default function Intro() {
@@ -32,23 +79,14 @@ export default function Intro() {
       </section>
       <section id="introText" className="order-2 md:order-1">
         <div className="">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 md:mb-8 lg:mb-10 text-center md:text-left ">
-            Hi, I'm <span style={{ color: highlightColor }}>Darwis</span>.
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-8xl mb-6 md:mb-8 lg:mb-10 text-center md:text-left">
+            Hi, I'm <span className="text-green-idk font-bold">Darwis</span>.
           </h1>
-          <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl  flex flex-col">
-            {coloredWords.map(({ word, coloredPart, color }, index) => (
-              <p key={index} className="text-center md:text-left p-0 m-0">
-                a{" "}
-                {coloredPart ? (
-                  <>
-                    Software <span style={{ color }}>{coloredPart}</span>
-                  </>
-                ) : (
-                  <span style={{ color }}>{word}</span>
-                )}
-                {word === "Cyber Security" ? " Enthusiastic" : ""}.
-              </p>
-            ))}
+          <div className="text-lg sm:text-xl md:text-2xl lg:text-4xl flex flex-col">
+            <TypewriterEffect words={word1} />
+            <TypewriterEffect words={word2} />
+            <TypewriterEffect words={word3} />
+            <TypewriterEffect words={word4} />
           </div>
         </div>
       </section>
