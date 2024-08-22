@@ -2,8 +2,8 @@
 import { text } from "stream/consumers";
 import { TextGenerateEffect } from "../components/ui/text-generate-effect";
 
-const sentences = 
-  "a network security student from IIUM, Malaysia with a passion for photography and tech. I enjoy developing software (but never release it, lol) and tackling CTF challenges, constantly upgrading my skills and expanding my knowledge in the digital world. I thrive on solving complex problems and always eager to learn and grow.";
+const sentences =
+  "a network security student from IIUM, Malaysia, passionate about photography, tech, and CTF challenges. I enjoy developing software, solving complex problems, and continually expanding my skills and knowledge in the digital world.";
 
 const highlightColor = "#5C8374";
 
