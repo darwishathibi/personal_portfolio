@@ -79,7 +79,7 @@ export default function Intro() {
       </section>
       <section id="introText" className="order-2 md:order-1">
         <div className="">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-8xl mb-6 md:mb-8 lg:mb-10 text-center md:text-left">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-8xl mb-6 md:mb-8 lg:mb-10 text-center md:text-left w-full">
             Hi, I'm <span className="text-green-idk font-bold">Darwis</span>.
           </h1>
           <div className="text-lg sm:text-xl md:text-2xl lg:text-4xl flex flex-col">
