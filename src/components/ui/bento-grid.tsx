@@ -1,4 +1,6 @@
+"use client";
 import { cn } from "../lib/utils";
+import { Image } from "@unpic/react";
 
 export const BentoGrid = ({
   className,
@@ -10,7 +12,7 @@ export const BentoGrid = ({
   return (
     <div
       className={cn(
-        "grid md:auto-rows-[18rem] grid-cols-1 md:grid-cols-3 gap-4 max-w-7xl mx-auto ",
+        "grid grid-cols-1 md:grid-cols-2 gap-10 max-w-7xl mx-auto",
         className
       )}
     >
@@ -23,30 +25,65 @@ export const BentoGridItem = ({
   className,
   title,
   description,
-  header,
-  icon,
+  imageURI,
+  frameworks,
+  github,
+  demo,
 }: {
   className?: string;
   title?: string | React.ReactNode;
   description?: string | React.ReactNode;
-  header?: React.ReactNode;
-  icon?: React.ReactNode;
+  imageURI?: string;
+  frameworks?: string[];  
+  github?: string;
+  demo?: string;
 }) => {
   return (
     <div
       className={cn(
-        "row-span-1 rounded-xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-4 dark:bg-black dark:border-white/[0.2] bg-black border border-transparent justify-between flex flex-col space-y-4",
+        "row-span-1 rounded-xl group/bento hover:shadow-xl transition duration-200 shadow-input shadow-none p-4 border-white/[0.2] bg-zinc-800 border border-white/40 justify-between flex flex-col space-y-4",
         className
       )}
     >
-      {header}
-      <div className="group-hover/bento:translate-x-2 transition duration-200">
-        {icon}
-        <div className="font-bold text-neutral-600 dark:text-neutral-200 mb-2 mt-2">
-          {title}
+      <div className="w-full h-80 overflow-hidden rounded-2xl">
+        <Image
+          //@ts-ignore
+          src={imageURI}
+          alt="project-image"
+          layout="fullWidth"
+          className="rounded-2xl -translate-y-10"
+        />
+      </div>
+      <div className="group-hover/bento:translate-x-2 transition duration-200 ">
+        <div className="font-bold mb-2 mt-2 text-2xl   sm:text-3xl md:text-4xl">{title}</div>
+        <div className="sm:text-sm md:text-base font-extralight ">{description}</div>
+        <div className="flex flex-wrap items-center space-x-3 mt-5">
+          {frameworks?.map((framework, i) => (
+            <div
+              key={i}
+              className="text-xs md:text-sm bg-stone-700 text-stone-100 px-2 py-1 rounded-md flex items-center"
+            >
+              {framework}
+            </div>
+          ))}
         </div>
-        <div className="font-normal text-neutral-600 text-xs dark:text-neutral-300">
-          {description}
+        <div className="flex flex-wrap space-x-2 mt-7 text-xs md:text-sm">
+          <a
+            href={github || "#"}
+            target="_blank"
+            rel="noreferrer"
+            className="flex items-center space-x-2 bg-[#FF860B] text-white px-2 py-1 rounded-md flex items-center"
+          >
+            See on Github
+          </a>
+          <a
+            href={demo || "#"}
+            target="_blank"
+            rel="noreferrer"
+            className="flex items-center space-x-2 bg-[#0B84FF] text-white px-2 py-1 rounded-md flex items-center"
+          >
+            View Demo
+          </a>
         </div>
       </div>
     </div>
