@@ -1,30 +1,29 @@
 [
-    {
-      "id": 1,
-      "title": "Personal Portfolio",
-      "description": "A personal portfolio website to showcase my projects and skills.",
-      "frameworks": ["Next.js", "Tailwind CSS", "Framer Motion"],
-      "github": "https://github.com/yourusername/portfolio",
-      "live": "https://yourportfolio.com",
-      "image": "https://yourportfolio.com/images/portfolio.png"
-    },
-    {
-      "id": 2,
-      "title": "Weather App",
-      "description": "A web app that displays real-time weather information using OpenWeatherMap API.",
-      "frameworks": ["React", "Tailwind CSS"],
-      "github": "https://github.com/yourusername/weather-app",
-      "live": "https://weatherapp.com",
-      "image": "https://yourweatherapp.com/images/weatherapp.png"
-    },
-    {
-      "id": 3,
-      "title": "Task Manager",
-      "description": "A task management app with CRUD operations and local storage.",
-      "frameworks": ["Vue.js", "Vuetify"],
-      "github": "https://github.com/yourusername/task-manager",
-      "live": null,
-      "image": "https://yourwebsite.com/images/taskmanager.png"
-    }
-  ]
+  {
+    "title": "Project 1",
+    "description": "This is a project description",
+    "frameworks": ["Next.js", "Tailwind CSS", "Framer Motion"],
+    "github": "https://github.com/darwishshathibi?tab=overview&from=2024-08-01&to=2024-08-22",
+    "demo": "https://github.com/darwishshathibi?tab=overview&from=2024-08-01&to=2024-08-22",
+    "imageURI": "https://www.shutterstock.com/shutterstock/photos/2252985323/display_1500/stock-vector-programmers-copying-and-pasting-code-instead-of-coding-it-industry-problems-funny-meme-for-social-2252985323.jpg"
+  },
+  {
+    "title": "Project 2",
+    "description": "This is a project description",
+    "frameworks": ["Next.js", "Tailwind CSS"],
+    "imageURI": "https://www.shutterstock.com/shutterstock/photos/2252985323/display_1500/stock-vector-programmers-copying-and-pasting-code-instead-of-coding-it-industry-problems-funny-meme-for-social-2252985323.jpg"
+  },
+  {
+    "title": "Project 3",
+    "description": "This is a project description",
+    "frameworks": ["Next.js", "Tailwind CSS", "Framer Motion", "React"],
+    "imageURI": "https://www.shutterstock.com/shutterstock/photos/2252985323/display_1500/stock-vector-programmers-copying-and-pasting-code-instead-of-coding-it-industry-problems-funny-meme-for-social-2252985323.jpg"
+  },
+  {
+    "title": "Project 4",
+    "description": "This is a project description",
+    "frameworks": ["Next.js", "Tailwind CSS", "Framer Motion", "React"],
+    "imageURI": "https://www.shutterstock.com/shutterstock/photos/2252985323/display_1500/stock-vector-programmers-copying-and-pasting-code-instead-of-coding-it-industry-problems-funny-meme-for-social-2252985323.jpg"
+  }
+]
   
