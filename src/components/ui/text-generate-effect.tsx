@@ -7,7 +7,7 @@ export const TextGenerateEffect = ({
   words,
   className,
   filter = true,
-  duration = 0.5,
+  duration = 0.4,
 }: {
   words: string;
   className?: string;
@@ -27,7 +27,7 @@ export const TextGenerateEffect = ({
         },
         {
           duration: duration ? duration : 1,
-          delay: stagger(0.2),
+          delay: stagger(0.1),
         }
       );
     }
@@ -37,10 +37,15 @@ export const TextGenerateEffect = ({
     return (
       <motion.div ref={scope}>
         {wordsArray.map((word, idx) => {
+          const specialIndices = [5, 6, 9, 10, 12, 16, 17];
+          const className = specialIndices.includes(idx)
+            ? "text-green-idk font-bold opacity-0"
+            : "text-white opacity-0";
+
           return (
             <motion.span
               key={word + idx}
-              className="dark:text-white opacity-0"
+              className={className}
               style={{
                 filter: filter ? "blur(10px)" : "none",
               }}
@@ -56,7 +61,7 @@ export const TextGenerateEffect = ({
   return (
     <div className={cn("", className)}>
       <div className="mt-4">
-        <div className=" dark:text-white leading-snug">{renderWords()}</div>
+        <div className="leading-snug">{renderWords()}</div>
       </div>
     </div>
   );
