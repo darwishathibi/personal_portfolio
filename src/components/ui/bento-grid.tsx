@@ -55,13 +55,17 @@ export const BentoGridItem = ({
         />
       </div>
       <div className="group-hover/bento:translate-x-2 transition duration-200 ">
-        <div className="font-bold mb-2 mt-2 text-2xl   sm:text-3xl md:text-4xl">{title}</div>
-        <div className="sm:text-sm md:text-base font-extralight ">{description}</div>
+        <div className="font-bold mb-2 mt-2 text-2xl   sm:text-3xl md:text-4xl">
+          {title}
+        </div>
+        <div className="sm:text-sm md:text-base font-extralight ">
+          {description}
+        </div>
         <div className="flex flex-wrap items-center space-x-3 mt-5">
           {frameworks?.map((framework, i) => (
             <div
               key={i}
-              className="text-xs md:text-sm bg-stone-700 text-stone-100 px-2 py-1 rounded-md flex items-center"
+              className="text-xs md:text-sm bg-stone-700 text-stone-100 px-2 py-1 rounded-full flex items-center"
             >
               {framework}
             </div>
@@ -72,7 +76,7 @@ export const BentoGridItem = ({
             href={github || "#"}
             target="_blank"
             rel="noreferrer"
-            className="flex items-center space-x-2 bg-[#FF860B] text-white px-2 py-1 rounded-md flex items-center"
+            className="flex items-center space-x-2 bg-[#FF860B] text-white px-2 py-1 rounded-full flex items-center"
           >
             See on Github
           </a>
@@ -80,7 +84,7 @@ export const BentoGridItem = ({
             href={demo || "#"}
             target="_blank"
             rel="noreferrer"
-            className="flex items-center space-x-2 bg-[#0B84FF] text-white px-2 py-1 rounded-md flex items-center"
+            className="flex items-center space-x-2 bg-[#0B84FF] text-white px-2 py-1 rounded-full flex items-center"
           >
             View Demo
           </a>
