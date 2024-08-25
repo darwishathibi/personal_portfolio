@@ -1,27 +1,13 @@
 import Image from "next/image";
 import { TypewriterEffect } from "../components/ui/typewriter-effect";
 
-const highlightColor = "#5C8374";
-const checkboardColor = "border-solid border-2 border-sky-500";
-
-const coloredWords = [
-  { word: "Student", color: highlightColor },
-  {
-    word: "Software Developer",
-    coloredPart: "Developer",
-    color: highlightColor,
-  },
-  { word: "Photographer", color: highlightColor },
-  { word: "Cyber Security", color: highlightColor },
-];
-
-const word1 =[
+const word1 = [
   {
     text: "a",
   },
   {
     text: "Student.",
-    className: "text-green-idk",
+    className: "text-indigo-500",
   },
 ];
 
@@ -34,7 +20,7 @@ const word2 = [
   },
   {
     text: "Developer.",
-    className: "text-green-idk",
+    className: "text-indigo-500",
   },
 ];
 
@@ -44,7 +30,7 @@ const word3 = [
   },
   {
     text: "Photographer.",
-    className: "text-green-idk",
+    className: "text-indigo-500",
   },
 ];
 
@@ -54,7 +40,7 @@ const word4 = [
   },
   {
     text: "Cyber Security",
-    className: "text-green-idk",
+    className: "text-indigo-500",
   },
   {
     text: "Enthusiastic.",
@@ -80,7 +66,7 @@ export default function Intro() {
       <section id="introText" className="order-2 md:order-1">
         <div className="">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-8xl mb-6 md:mb-8 lg:mb-10 text-center md:text-left w-full">
-            Hi, I'm <span className="text-green-idk font-bold">Darwis</span>.
+            Hi, I'm <span className="text-indigo-500 font-bold">Darwis</span>.
           </h1>
           <div className="text-lg sm:text-xl md:text-2xl lg:text-4xl flex flex-col">
             <TypewriterEffect words={word1} />
