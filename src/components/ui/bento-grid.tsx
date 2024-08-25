@@ -76,7 +76,7 @@ export const BentoGridItem = ({
             href={github || "#"}
             target="_blank"
             rel="noreferrer"
-            className="flex items-center space-x-2 bg-[#FF860B] text-white px-2 py-1 rounded-full flex items-center"
+            className="flex items-center space-x-2 bg-indigo-500 text-white px-2 py-1 rounded-full flex items-center"
           >
             See on Github
           </a>
@@ -84,7 +84,7 @@ export const BentoGridItem = ({
             href={demo || "#"}
             target="_blank"
             rel="noreferrer"
-            className="flex items-center space-x-2 bg-[#0B84FF] text-white px-2 py-1 rounded-full flex items-center"
+            className="flex items-center space-x-2 bg-indigo-500 text-white px-2 py-1 rounded-full flex items-center"
           >
             View Demo
           </a>
