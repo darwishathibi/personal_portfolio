@@ -8,11 +8,13 @@ export const TextGenerateEffect = ({
   className,
   filter = true,
   duration = 0.4,
+  specialWords = [],
 }: {
   words: string;
   className?: string;
   filter?: boolean;
   duration?: number;
+  specialWords?: string[];
 }) => {
   const [scope, animate] = useAnimate();
   const isInView = useInView(scope);
@@ -37,9 +39,8 @@ export const TextGenerateEffect = ({
     return (
       <motion.div ref={scope}>
         {wordsArray.map((word, idx) => {
-          const specialIndices = [5, 6, 9, 10, 12, 16, 17];
-          const className = specialIndices.includes(idx)
-            ? "text-green-idk font-bold opacity-0"
+          const className = specialWords.includes(word)
+            ? "text-indigo-500 font-bold opacity-0"
             : "text-white opacity-0";
 
           return (

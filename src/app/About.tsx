@@ -3,7 +3,17 @@ import { text } from "stream/consumers";
 import { TextGenerateEffect } from "../components/ui/text-generate-effect";
 
 const sentences =
-  "a network security student from IIUM, Malaysia, passionate about photography, tech, and CTF challenges. I enjoy developing software, solving complex problems, and continually expanding my skills and knowledge in the digital world.";
+  "a network security student from IIUM, Malaysia. Passionate about photography, tech, and CTF challenges. I enjoy developing software, solving complex problems, and continually expanding my skills and knowledge in the digital world.";
+
+const specialWords = [
+  "IIUM,",
+  "Malaysia.",
+  "photography,",
+  "tech,",
+  "CTF",
+  "developing",
+  "software,",
+];
 
 export default function About() {
   return (
@@ -12,7 +22,7 @@ export default function About() {
         <p>About</p>
       </div>
       <div className="text-md sm:text-2xl md:text-3xl lg:text-5xl p-0 w-5/12 tracking-wider mb-10">
-        <TextGenerateEffect words={sentences} />
+        <TextGenerateEffect words={sentences} specialWords={specialWords} />
       </div>
     </div>
   );
