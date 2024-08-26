@@ -7,14 +7,14 @@ import { CanvasRevealEffect } from "@/components/ui/canvas-reveal-effect";
 export default function Gear() {
   return (
     <>
-      <div className="py-20 flex flex-col lg:flex-row items-center justify-center w-full gap-4 mx-auto px-8">
-        <Card title="Sony" icon={<SonyIcon />}>
+      <div className="h-screen py-20 flex flex-col lg:flex-row items-center justify-center w-full gap-4 mx-auto px-8">
+        <Card title="Sony Alpha 6300" icon={<SonyIcon />}>
           <CanvasRevealEffect
             animationSpeed={3}
             containerClassName="bg-emerald-900"
           />
         </Card>
-        <Card title="Google Pixel" icon={<GoogleIcon />}>
+        <Card title="Google Pixel 6a" icon={<GoogleIcon />}>
           <CanvasRevealEffect
             animationSpeed={3}
             containerClassName="bg-black"
@@ -24,7 +24,7 @@ export default function Gear() {
             ]}
           />
         </Card>
-        <Card title="Fujifilm" icon={<FujifilmIcon />}>
+        <Card title="Fujifilm XT-20" icon={<FujifilmIcon />}>
           <CanvasRevealEffect
             animationSpeed={3}
             containerClassName="bg-sky-600"
@@ -50,7 +50,7 @@ const Card = ({
     <div
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      className="border border-white/[0.4] group/canvas-card flex items-center justify-center max-w-sm w-full mx-auto p-4 relative h-[30rem] relative h-screen"
+      className="border border-white/[0.4] group/canvas-card flex items-center justify-center max-w-sm w-full mx-auto p-4 relative h-[30rem] relative"
     >
       <Icon className="absolute h-6 w-6 -top-3 -left-3 text-white" />
       <Icon className="absolute h-6 w-6 -bottom-3 -left-3 text-white" />
@@ -84,12 +84,12 @@ const Card = ({
 const FujifilmIcon = () => {
   return (
     <svg
-      width="100%"
-      height="100%"
-      viewBox="0 0 66 66"
+      width="30%"
+      height="30%"
+      viewBox="0 0 25 25"
       role="img"
       xmlns="http://www.w3.org/2000/svg"
-      className="flex items-center justify-center text-white group-hover/canvas-card:text-white border border-green-500 "
+      className="flex items-center justify-center text-white group-hover/canvas-card:text-white"
     >
       <path
         fill="currentColor"
@@ -102,12 +102,12 @@ const FujifilmIcon = () => {
 const GoogleIcon = () => {
   return (
     <svg
-      width="100%"
-      height="100%"
-      viewBox="0 0 66 66"
+      width="30%"
+      height="30%"
+      viewBox="0 0 25 25"
       role="img"
       xmlns="http://www.w3.org/2000/svg"
-      className="flex items-center justify-center text-white group-hover/canvas-card:text-white border border-green-500 "
+      className="flex items-center justify-center text-white group-hover/canvas-card:text-white"
     >
       <path
         fill="currentColor"
@@ -120,12 +120,12 @@ const GoogleIcon = () => {
 const SonyIcon = () => {
   return (
     <svg
-      width="100%"
-      height="100%"
-      viewBox="0 0 66 66"
+      width="30%"
+      height="30%"
+      viewBox="0 0 25 25"
       role="img"
       xmlns="http://www.w3.org/2000/svg"
-      className="flex items-center justify-center text-white group-hover/canvas-card:text-white border border-green-500 "
+      className="flex items-center justify-center text-white group-hover/canvas-card:text-white"
     >
       <path
         fill="currentColor"
