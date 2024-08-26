@@ -9,9 +9,36 @@ export default function Contact() {
           "can <span className="text-indigo-500">contact</span> me..."
         </p>
       </div>
-      <div className="h-screen border">
-        <div className="grid min-h-[200px] place-content-center">
-          <DrawOutlineButton>Hover me</DrawOutlineButton>
+      <div className="h-[60vh] flex justify-center">
+        <div className="grid min-h-[200px] place-content-center flex justify-center space-y-14">
+          <a
+            href="https://www.instagram.com/darwishathibi/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <DrawOutlineButton>instagram.</DrawOutlineButton>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/darwis-shathibi-965609204/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <DrawOutlineButton>linkedin.</DrawOutlineButton>
+          </a>
+          <a
+            href="https://github.com/darwishshathibi"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <DrawOutlineButton>github.</DrawOutlineButton>
+          </a>
+          <a
+            href="mailto:danishdarwis82@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <DrawOutlineButton>email.</DrawOutlineButton>
+          </a>
         </div>
       </div>
     </div>
