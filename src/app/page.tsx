@@ -3,6 +3,9 @@ import Footer from "../components/Footer";
 import Intro from "./Intro";
 import About from "./About";
 import Projects from "./Projects";
+import Photography from "./Photography";
+import Skills from "./Skills";
+import Contact from "./Contact";
 
 export default function Home() {
   return (
@@ -11,6 +14,9 @@ export default function Home() {
       <Intro />
       <About />
       <Projects />
+      <Photography />
+      <Skills />
+      <Contact />
       <Footer />
     </main>
   );
