@@ -67,5 +67,9 @@ export const projects = [
     title: "Framer Motion",
     link: "https://www.framer.com/motion/",
   },
+  {
+    title: "Boostrap",
+    link: "https://getbootstrap.com",
+  },
 ];
 
