@@ -1,5 +1,5 @@
 "use client";
-import DrawOutlineButton from "../components/ui/draw-outline-button";
+import Link from "next/link";
 import { TextGenerateEffect } from "../components/ui/text-generate-effect";
 
 const sentences =
@@ -42,7 +42,7 @@ export default function Photography() {
         </div>
         <div className="text-md sm:text-xl md:text-2xl lg:text-4xl xl:text-5xl p-0 w-5/12 tracking-wider">
           <TextGenerateEffect words={sentences} specialWords={specialWords} />
-          <a href="#">
+          <Link href={"/photography"}>
             <div className="mt-56 w-fit hover:border-b-2 border-indigo-500  ">
               <TextGenerateEffect
                 words={sentences2}
@@ -50,7 +50,7 @@ export default function Photography() {
                 className="text-md sm:text-lg md:text-xl lg:text-2xl xl:text-3xl"
               />
             </div>
-          </a>
+          </Link>
         </div>
       </div>
     </div>
