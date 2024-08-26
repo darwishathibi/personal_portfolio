@@ -21,31 +21,31 @@ export default function Skills() {
 export const projects = [
   {
     title: "HTML",
-    link: "https://stripe.com",
+    link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
   },
   {
     title: "CSS",
-    link: "https://netflix.com",
+    link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
   },
   {
     title: "JavaScript",
-    link: "https://google.com",
+    link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
   },
   {
     title: "TypeScript",
-    link: "https://meta.com",
+    link: "https://www.typescriptlang.org",
   },
   {
     title: "Next.js",
-    link: "https://amazon.com",
+    link: "https://nextjs.org",
   },
   {
     title: "React Native",
-    link: "https://microsoft.com",
+    link: "https://reactnative.dev",
   },
   {
     title: "TailwindCSS",
-    link: "https://github.com",
+    link: "https://tailwindcss.com",
   },
   {
     title: "GitHub",
@@ -53,18 +53,19 @@ export const projects = [
   },
   {
     title: "Firebase",
-    link: "https://github.com",
+    link: "https://firebase.google.com",
   },
   {
     title: "Expo",
-    link: "https://github.com",
+    link: "https://expo.dev",
   },
   {
     title: "Lightroom",
-    link: "https://github.com",
+    link: "https://www.adobe.com/products/photoshop-lightroom.html",
   },
   {
     title: "Framer Motion",
-    link: "https://github.com",
+    link: "https://www.framer.com/motion/",
   },
 ];
+
