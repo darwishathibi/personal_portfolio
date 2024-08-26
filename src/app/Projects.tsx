@@ -1,6 +1,6 @@
 import React from "react";
 import projectsData from "../data/projects.json";
-import { BentoGrid, BentoGridItem } from "../components/ui/bento-grid";;
+import { BentoGrid, BentoGridItem } from "../components/ui/bento-grid";
 
 export default function BentoGridDemo() {
   return (
@@ -11,7 +11,7 @@ export default function BentoGridDemo() {
             things i <span className="text-indigo-500">made</span>...
           </p>
         </div>
-        <BentoGrid className="mx-auto order-solid">
+        <BentoGrid className="mx-auto order-solid px-8">
           {projectsData.map((item, i) => (
             <BentoGridItem
               key={i}
