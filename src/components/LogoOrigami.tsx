@@ -1,6 +1,15 @@
 import React, { ReactElement, useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { SiAmazon, SiGithub, SiGoogle, SiMeta, SiTwitch } from "react-icons/si";
+import {
+  SiGithub,
+  SiGoogle,
+  SiHtml5,
+  SiCss3,
+  SiJavascript,
+  SiNextdotjs,
+  SiReact,
+  SiCyberdefenders,
+} from "react-icons/si";
 import { twMerge } from "tailwind-merge";
 
 export const DivOrigami = () => {
@@ -8,20 +17,29 @@ export const DivOrigami = () => {
     <section className="flex h-72 sm:h-52 flex-col items-center justify-center gap-12 px-4 py-24 md:flex-row">
       <LogoRolodex
         items={[
-          <LogoItem key={1} className="bg-orange-300 text-neutral-900">
-            <SiAmazon />
-          </LogoItem>,
-          <LogoItem key={2} className="bg-green-300 text-neutral-900">
+          <LogoItem key={1} className="bg-green-300 text-neutral-900">
             <SiGoogle />
           </LogoItem>,
-          <LogoItem key={3} className="bg-blue-300 text-neutral-900">
-            <SiMeta />
-          </LogoItem>,
-          <LogoItem key={4} className="bg-white text-black">
+          <LogoItem key={2} className="bg-white text-black">
             <SiGithub />
           </LogoItem>,
-          <LogoItem key={5} className="bg-purple-300 text-neutral-900">
-            <SiTwitch />
+          <LogoItem key={3} className="bg-red-600 text-neutral-50">
+            <SiCyberdefenders />
+          </LogoItem>,
+          <LogoItem key={4} className="bg-blue-500 text-neutral-50">
+            <SiHtml5 />
+          </LogoItem>,
+          <LogoItem key={5} className="bg-blue-700 text-neutral-50">
+            <SiCss3 />
+          </LogoItem>,
+          <LogoItem key={6} className="bg-yellow-500 text-neutral-900">
+            <SiJavascript />
+          </LogoItem>,
+          <LogoItem key={7} className="bg-blue-400 text-neutral-50">
+            <SiReact />
+          </LogoItem>,
+          <LogoItem key={8} className="bg-black text-white">
+            <SiNextdotjs />
           </LogoItem>,
         ]}
       />
