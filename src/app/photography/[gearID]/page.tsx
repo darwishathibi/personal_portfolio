@@ -1,7 +1,9 @@
+import ImagesCard from "@/app/photography/[gearID]/ImagesCard";
+
 export default function GearId({params} : any){
     return (
-        <div>
-            <h1>GearId of {params.gearID} </h1>
-        </div>
+        <main className="bg-slate-950 scrollbar-hide">
+            <ImagesCard />
+        </main>
     )
-}
+}   
