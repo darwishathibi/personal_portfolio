@@ -26,7 +26,7 @@ export default function Contact() {
             <DrawOutlineButton>linkedin.</DrawOutlineButton>
           </a>
           <a
-            href="https://github.com/darwishshathibi"
+            href="https://github.com/darwishathibi"
             target="_blank"
             rel="noopener noreferrer"
           >
