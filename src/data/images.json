@@ -1,0 +1,19 @@
+{
+    "images": {
+      "sony": [
+        "https://example.com/sony/image1.jpg",
+        "https://example.com/sony/image2.jpg",
+        "https://example.com/sony/image3.jpg"
+      ],
+      "pixel": [
+        "https://example.com/pixel/image1.jpg",
+        "https://example.com/pixel/image2.jpg",
+        "https://example.com/pixel/image3.jpg"
+      ],
+      "fujifilm": [
+        "https://example.com/fujifilm/image1.jpg",
+        "https://example.com/fujifilm/image2.jpg",
+        "https://example.com/fujifilm/image3.jpg"
+      ]
+    }
+  }
