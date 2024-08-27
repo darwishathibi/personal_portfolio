@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Link from "next/link";
 
 import { AnimatePresence, motion } from "framer-motion";
 import { CanvasRevealEffect } from "@/components/ui/canvas-reveal-effect";
@@ -7,30 +8,36 @@ import { CanvasRevealEffect } from "@/components/ui/canvas-reveal-effect";
 export default function Gear() {
   return (
     <>
-      <div className="h-screen py-20 flex flex-col lg:flex-row items-center justify-center w-full gap-4 mx-auto px-8">
-        <Card title="Sony Alpha 6300" icon={<SonyIcon />}>
-          <CanvasRevealEffect
-            animationSpeed={3}
-            containerClassName="bg-emerald-900"
-          />
-        </Card>
-        <Card title="Google Pixel 6a" icon={<GoogleIcon />}>
-          <CanvasRevealEffect
-            animationSpeed={3}
-            containerClassName="bg-black"
-            colors={[
-              [236, 72, 153],
-              [232, 121, 249],
-            ]}
-          />
-        </Card>
-        <Card title="Fujifilm XT-20" icon={<FujifilmIcon />}>
-          <CanvasRevealEffect
-            animationSpeed={3}
-            containerClassName="bg-sky-600"
-            colors={[[125, 211, 252]]}
-          />
-        </Card>
+      <div className="h-screen py-20 flex flex-col lg:flex-row items-center justify-center w-full gap-10 mx-auto px-8">
+        <Link href="/photography/sony">
+          <Card title="Sony Alpha 6300" icon={<SonyIcon />}>
+            <CanvasRevealEffect
+              animationSpeed={3}
+              containerClassName="bg-emerald-900"
+            />
+          </Card>
+        </Link>
+        <Link href="/photography/pixel">
+          <Card title="Google Pixel 6a" icon={<GoogleIcon />}>
+            <CanvasRevealEffect
+              animationSpeed={3}
+              containerClassName="bg-black"
+              colors={[
+                [236, 72, 153],
+                [232, 121, 249],
+              ]}
+            />
+          </Card>
+        </Link>
+        <Link href="/photography/fujifilm">
+          <Card title="Fujifilm XT-20" icon={<FujifilmIcon />}>
+            <CanvasRevealEffect
+              animationSpeed={3}
+              containerClassName="bg-sky-600"
+              colors={[[125, 211, 252]]}
+            />
+          </Card>
+        </Link>
       </div>
     </>
   );
