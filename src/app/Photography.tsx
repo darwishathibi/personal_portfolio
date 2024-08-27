@@ -40,14 +40,14 @@ export default function Photography() {
             <span className="text-indigo-500">Ampang Park.</span>
           </p>
         </div>
-        <div className="text-md sm:text-xl md:text-2xl lg:text-4xl xl:text-5xl p-0 w-5/12 tracking-wider">
+        <div className="text-lg sm:text-xl md:text-2xl lg:text-4xl xl:text-5xl p-0 w-5/12 tracking-wider">
           <TextGenerateEffect words={sentences} specialWords={specialWords} />
           <Link href={"/photography"}>
             <div className="mt-56 w-fit hover:border-b-2 border-indigo-500  ">
               <TextGenerateEffect
                 words={sentences2}
                 specialWords={specialWords2}
-                className="text-md sm:text-lg md:text-xl lg:text-2xl xl:text-3xl"
+                className="text-sm sm:text-lg md:text-xl lg:text-2xl xl:text-3xl"
               />
             </div>
           </Link>

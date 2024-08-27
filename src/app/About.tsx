@@ -26,7 +26,7 @@ export default function About() {
       <div>
         <DivOrigami />
       </div>
-      <div className="text-md sm:text-xl md:text-2xl lg:text-4xl xl:text-5xl p-0 w-5/12 tracking-wider mb-10">
+      <div className="text-lg sm:text-xl md:text-2xl lg:text-4xl xl:text-5xl p-0 w-5/12 tracking-wider mb-10">
         <TextGenerateEffect words={sentences} specialWords={specialWords} />
       </div>
     </div>
