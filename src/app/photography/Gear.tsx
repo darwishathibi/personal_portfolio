@@ -8,7 +8,7 @@ import { CanvasRevealEffect } from "@/components/ui/canvas-reveal-effect";
 export default function Gear() {
   return (
     <>
-      <div className="h-screen py-20 flex flex-col lg:flex-row items-center justify-center w-full gap-10 mx-auto px-8">
+      <div className="py-20 flex flex-col lg:flex-row items-center justify-center w-full gap-10 mx-auto px-8">
         <Link href="/photography/sony">
           <Card title="Sony Alpha 6300" icon={<SonyIcon />}>
             <CanvasRevealEffect
