@@ -1,19 +1,46 @@
 {
     "images": {
       "sony": [
-        "https://example.com/sony/image1.jpg",
-        "https://example.com/sony/image2.jpg",
-        "https://example.com/sony/image3.jpg"
+        {
+          "title": "Photo 1",
+          "src": "https://firebasestorage.googleapis.com/v0/b/testauth-99b64.appspot.com/o/images%2Fsony%2FDSC07832.ARW?alt=media&token=dc495825-4d9a-4ae4-bcc3-217d4db10415"
+        },
+        {
+          "title": "Photo 2",
+          "src": "https://firebasestorage.googleapis.com/v0/b/testauth-99b64.appspot.com/o/images%2Fsony%2FDSC08012.ARW?alt=media&token=9fb64f86-7fc0-4322-a2ff-bbdfdf0f09bc" 
+        },
+        {
+          "title": "Photo 3",
+          "src": "https://firebasestorage.googleapis.com/v0/b/testauth-99b64.appspot.com/o/images%2Fsony%2FDSC08030.ARW?alt=media&token=01fdd79f-9b5d-42c8-b612-62dbaca89df0"
+        }
       ],
       "pixel": [
-        "https://example.com/pixel/image1.jpg",
-        "https://example.com/pixel/image2.jpg",
-        "https://example.com/pixel/image3.jpg"
+        {
+          "title": "Photo 1",
+          "src": "https://firebasestorage.googleapis.com/v0/b/testauth-99b64.appspot.com/o/images%2Fpixel%2FDSC06055.JPG?alt=media&token=9a79d967-cf76-45a8-9884-da5e0ee07d70"
+        },
+        {
+          "title": "Photo 2",
+          "src": "https://firebasestorage.googleapis.com/v0/b/testauth-99b64.appspot.com/o/images%2Fpixel%2FDSC06089.JPG?alt=media&token=c66fa7e6-de9c-4dc5-bea5-f23d73042a7d"
+        },
+        {
+          "title": "Photo 3",
+          "src": "https://firebasestorage.googleapis.com/v0/b/testauth-99b64.appspot.com/o/images%2Fpixel%2FDSC06079.JPG?alt=media&token=18fe988e-a8cf-42a8-af2b-e4e53de197b0"
+        }
       ],
       "fujifilm": [
-        "https://example.com/fujifilm/image1.jpg",
-        "https://example.com/fujifilm/image2.jpg",
-        "https://example.com/fujifilm/image3.jpg"
+        {
+          "title": "Photo 1",
+          "src": "https://firebasestorage.googleapis.com/v0/b/testauth-99b64.appspot.com/o/images%2Ffujifilm%2FDRWS6637.JPG?alt=media&token=ca5be3b2-542e-41be-9178-d40a2bf97f1d"
+        },
+        {
+          "title": "Photo 2",
+          "src": "https://firebasestorage.googleapis.com/v0/b/testauth-99b64.appspot.com/o/images%2Ffujifilm%2FDRWS6639.JPG?alt=media&token=be7a4723-b6ce-4db8-8d7c-35d99aa77350"
+        },
+        {
+          "title": "Photo 3",
+          "src": "https://firebasestorage.googleapis.com/v0/b/testauth-99b64.appspot.com/o/images%2Ffujifilm%2FDRWS6643.JPG?alt=media&token=02bfc36b-ac8d-4386-a8ac-125ddd884e2e"
+        }
       ]
     }
   }
