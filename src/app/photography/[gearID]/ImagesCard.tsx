@@ -10,6 +10,8 @@ export default function ImagesCard({ params }: { params: { gearID: GearID } }) {
   // Access the property using gearID
   const gearImages = imagesData.images[gearID];
   // console.log(gearImages);
+
+  //testing
   const cards = [
     {
       title: "Forest Adventure",
@@ -37,5 +39,5 @@ export default function ImagesCard({ params }: { params: { gearID: GearID } }) {
     },
   ];
 
-  return <FocusCards cards={cards} />;
+  return <FocusCards cards={gearImages} />;
 }
