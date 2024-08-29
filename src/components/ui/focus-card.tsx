@@ -32,8 +32,8 @@ export const Card = React.memo(
         onMouseEnter={() => setHovered(index)}
         onMouseLeave={() => setHovered(null)}
         className={cn(
-          "mb-10 relative bg-slate-400 overflow-hidden w-full transition-all duration-300 ease-out",
-          hovered !== null && hovered !== index && "blur-sm scale-[0.98]"
+          "mb-10 relative bg-slate-800 overflow-hidden w-full transition-all duration-300 ease-out",
+          hovered !== null && hovered !== index && "blur-sm scale-[0.98]"  
         )}
       >
         <Image
@@ -69,7 +69,7 @@ export function FocusCards({ cards }: { cards: Card[] }) {
   const [hovered, setHovered] = useState<number | null>(null);
 
   return (
-    <div className="gap-10 w-full p-12 columns-1 md:columns-2 lg:columns-3 xl:columns-4">
+    <div className="gap-10 w-full p-12 columns-1 md:columns-2 lg:columns-3">
       {cards.map((card, index) => (
         <Card
           key={card.title}
