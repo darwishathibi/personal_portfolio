@@ -1,9 +1,10 @@
 "use client";
 import { Image } from "@unpic/react";
-import React, { useState, useRef, useEffect } from "react";
+import { motion, useInView } from "framer-motion";
+import React, { useState, useRef } from "react";
 import { cn } from "../lib/utils";
 
-export const Card = React.memo(
+const Card = React.memo(
   ({
     card,
     index,
@@ -15,29 +16,29 @@ export const Card = React.memo(
     hovered: number | null;
     setHovered: React.Dispatch<React.SetStateAction<number | null>>;
   }) => {
-    const [isPortrait, setIsPortrait] = useState(false);
-    const imgRef = useRef(null);
+    const ref = React.useRef(null);
+    const isInView = useInView(ref, { once: true, amount: 0.3 });
 
-    useEffect(() => {
-      const img = new window.Image();
-      img.onload = () => {
-        setIsPortrait(img.height > img.width);
-      };
-      img.src = card.src;
-      console.log(img.height);
-    }, [card.src]);
+    const variants = {
+      hidden: { opacity: 0, y: 50 },
+      visible: { opacity: 1, y: 0 },
+    };
 
     return (
-      <div
+      <motion.div
+        ref={ref}
+        variants={variants}
+        initial="hidden"
+        animate={isInView ? "visible" : "hidden"}
+        transition={{ duration: 0.5, delay: index * 0.1 }}
         onMouseEnter={() => setHovered(index)}
         onMouseLeave={() => setHovered(null)}
         className={cn(
           "mb-10 relative bg-slate-800 overflow-hidden w-full transition-all duration-300 ease-out",
-          hovered !== null && hovered !== index && "blur-sm scale-[0.98]"  
+          hovered !== null && hovered !== index && "blur-sm scale-[0.98]"
         )}
       >
         <Image
-          ref={imgRef}
           src={card.src}
           alt={card.title}
           className="object-cover inset-0"
@@ -45,7 +46,7 @@ export const Card = React.memo(
         />
         <div
           className={cn(
-            "absolute inset-0 bg-black/50 flex items-end px-4 transition-opacity duration-300",
+            "absolute inset-0 flex items-end px-4 transition-opacity duration-300",
             hovered === index ? "opacity-100" : "opacity-0"
           )}
         >
@@ -53,7 +54,7 @@ export const Card = React.memo(
             {card.title}
           </div>
         </div>
-      </div>
+      </motion.div>
     );
   }
 );
