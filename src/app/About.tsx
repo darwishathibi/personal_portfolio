@@ -16,6 +16,7 @@ const specialWords = [
   "expanding",
   "my",
   "skills",
+  "knowledge",
 ];
 
 //html, css, javascript, next.js, react native, SiCyberdefenders, google, github
