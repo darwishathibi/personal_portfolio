@@ -23,7 +23,8 @@ export default function Photography() {
     <div className="w-full h-full">
       <div className="flex justify-center items-center text-xl sm:text-xl md:text-2xl lg:text-4xl xl:text-5xl ">
         <p className="mb-32">
-          "ooooh, <span className="text-indigo-500">photography</span> magic!"
+          &quot;ooooh, <span className="text-indigo-500">photography</span>{" "}
+          magic!&quot;
         </p>
       </div>
       <div className="flex flex-col sm:flex-col md:flex-col lg:flex-row items-center justify-evenly h-screen relative">

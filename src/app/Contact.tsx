@@ -6,7 +6,7 @@ export default function Contact() {
     <div className="w-full h-full">
       <div className="text-xl sm:text-xl md:text-2xl lg:text-4xl xl:text-5xl flex justify-center items-center">
         <p className="mt-48">
-          "can <span className="text-indigo-500">contact</span> me..."
+          &quot;can <span className="text-indigo-500">contact</span> me...&quot;
         </p>
       </div>
       <div className="h-[60vh] flex justify-center">

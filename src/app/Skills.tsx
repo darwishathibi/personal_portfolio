@@ -6,7 +6,8 @@ export default function Skills() {
     <div className="w-full h-full">
       <div className="text-xl sm:text-xl md:text-2xl lg:text-4xl xl:text-5xl flex justify-center items-center">
         <p className="mb-20 mt-48">
-          "skills <span className="text-indigo-500">that i have</span>..."
+          &quot;skills <span className="text-indigo-500">that i have</span>
+          ...&quot;
         </p>
       </div>
       <div className="h-full">

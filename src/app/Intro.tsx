@@ -90,7 +90,7 @@ export default function Intro() {
             transition={{ duration: 0.5, delay: 0.6 }}
             className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-8xl mb-6 md:mb-8 lg:mb-10 text-center md:text-left w-full"
           >
-            Hi, I'm <span className="text-indigo-500 font-bold">Darwis</span>.
+            Hi, I&apos;m <span className="text-indigo-500 font-bold">Darwis</span>.
           </motion.h1>
           <motion.div
             variants={fadeInUpVariants}
