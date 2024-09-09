@@ -13,6 +13,9 @@ const specialWords = [
   "CTF",
   "developing",
   "software,",
+  "expanding",
+  "my",
+  "skills",
 ];
 
 //html, css, javascript, next.js, react native, SiCyberdefenders, google, github
