@@ -61,11 +61,11 @@ export const BentoGridItem = ({
         <div className="text-xs sm:text-sm md:text-base font-extralight ">
           {description}
         </div>
-        <div className="flex flex-wrap items-center space-x-3 mt-5">
+        <div className="flex flex-wrap items-center mt-5">
           {frameworks?.map((framework, i) => (
             <div
               key={i}
-              className="text-xs md:text-sm bg-stone-700 text-stone-100 px-2 py-1 rounded-full flex items-center"
+              className="text-xs md:text-sm bg-stone-700 text-stone-100 px-2 py-1 rounded-full flex items-center mr-1 my-1"
             >
               {framework}
             </div>
