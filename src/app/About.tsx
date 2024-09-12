@@ -23,14 +23,11 @@ const specialWords = [
 
 export default function About() {
   return (
-    <div className="flex flex-col sm:flex-col md:flex-col lg:flex-row items-center justify-evenly h-screen relative">
-      {/* <div className="absolute text-white/10 text-[150px] sm:text-[250px] md:sm:text-[350px] lg:sm:text-[450px] overflow-hidden sm:-top-28 right-0 lg:-top-36 right-0 font-extrabold tracking-wide">
-        <p>About</p>
-      </div> */}
+    <div className="flex flex-col sm:flex-col md:flex-col lg:flex-row items-center justify-evenly h-screen w-full relative">
       <div>
         <DivOrigami />
       </div>
-      <div className="text-lg sm:text-xl md:text-2xl lg:text-4xl xl:text-5xl p-0 w-5/12 tracking-wider mb-10">
+      <div className="text-2xl sm:text-2xl md:text-3xl lg:text-5xl xl:text-5xl lg:w-5/12 mx-10 tracking-wider mb-10">
         <TextGenerateEffect words={sentences} specialWords={specialWords} />
       </div>
     </div>
