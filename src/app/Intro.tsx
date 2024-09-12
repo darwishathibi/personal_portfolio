@@ -61,7 +61,7 @@ export default function Intro() {
       animate="visible"
       variants={fadeInUpVariants}
       transition={{ duration: 0.5 }}
-      className="flex flex-col md:flex-row justify-evenly items-center px-4 sm:px-6 md:px-8 py-12 md:py-16 lg:py-24 min-h-screen"
+      className="flex flex-col md:flex-row justify-evenly items-center px-4 sm:px-6 md:px-8 py-12 md:py-16 lg:py-24 min-h-screen w-full"
     >
       <motion.section
         id="avatar"
@@ -69,7 +69,7 @@ export default function Intro() {
         transition={{ duration: 0.5, delay: 0.2 }}
         className="md:w-1/2 mb-8 md:mb-0 order-1 md:order-2"
       >
-        <div className="relative w-[300px] h-[300px] sm:w-[300px] sm:h-[300px] md:w-[450px] md:h-[450px] lg:w-[500px] lg:h-[500px] xl:w-[600px] xl:h-[600px] mx-auto">
+        <div className="relative w-[400px] h-[400px] sm:w-[400px] sm:h-[400px] md:w-[450px] md:h-[450px] lg:w-[500px] lg:h-[500px] xl:w-[600px] xl:h-[600px] mx-auto">
           <Image
             src="/image/cvbox.org.notion-avatar-1724001646264.png"
             fill
@@ -84,18 +84,18 @@ export default function Intro() {
         transition={{ duration: 0.5, delay: 0.4 }}
         className="order-2 md:order-1"
       >
-        <div>
+        <div className="">
           <motion.h1
             variants={fadeInUpVariants}
             transition={{ duration: 0.5, delay: 0.6 }}
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-8xl mb-6 md:mb-8 lg:mb-10 text-center md:text-left w-full"
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl mb-6 md:mb-8 lg:mb-10 sm:text-left w-full"
           >
-            Hi, I&apos;m <span className="text-indigo-500 font-bold">Darwis</span>.
+            Hi, I&apos;m <span className="text-indigo-500 font-bold">Darwis.</span> 
           </motion.h1>
           <motion.div
             variants={fadeInUpVariants}
             transition={{ duration: 0.5, delay: 0.8 }}
-            className="text-lg sm:text-xl md:text-2xl lg:text-4xl flex flex-col"
+            className="text-2xl sm:text-2xl md:text-3xl lg:text-4xl flex flex-col"
           >
             <TypewriterEffect words={word1} />
             <TypewriterEffect words={word2} />
