@@ -61,15 +61,15 @@ export default function Intro() {
       animate="visible"
       variants={fadeInUpVariants}
       transition={{ duration: 0.5 }}
-      className="flex flex-col md:flex-row justify-evenly items-center px-4 sm:px-6 md:px-8 py-12 md:py-16 lg:py-24 min-h-screen w-full"
+      className="flex justify-evenly items-center flex-col md:flex-row  px-4 sm:px-6 md:px-8 py-12 md:py-16 lg:py-24 min-h-screen w-full"
     >
       <motion.section
         id="avatar"
         variants={fadeInUpVariants}
         transition={{ duration: 0.5, delay: 0.2 }}
-        className="md:w-1/2 mb-8 md:mb-0 order-1 md:order-2"
+        className="mb-8 md:mb-0 order-1 md:order-2"
       >
-        <div className="relative w-[400px] h-[400px] sm:w-[400px] sm:h-[400px] md:w-[450px] md:h-[450px] lg:w-[500px] lg:h-[500px] xl:w-[600px] xl:h-[600px] mx-auto">
+        <div className="relative w-[400px] h-[400px] sm:w-[400px] sm:h-[400px] md:w-[450px] md:h-[450px] lg:w-[500px] lg:h-[500px] xl:w-[600px] xl:h-[600px]">
           <Image
             src="/image/cvbox.org.notion-avatar-1724001646264.png"
             fill
@@ -90,12 +90,13 @@ export default function Intro() {
             transition={{ duration: 0.5, delay: 0.6 }}
             className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl mb-6 md:mb-8 lg:mb-10 sm:text-left w-full"
           >
-            Hi, I&apos;m <span className="text-indigo-500 font-bold">Darwis.</span> 
+            Hi, I&apos;m{" "}
+            <span className="text-indigo-500 font-bold">Darwis.</span>
           </motion.h1>
           <motion.div
             variants={fadeInUpVariants}
             transition={{ duration: 0.5, delay: 0.8 }}
-            className="text-2xl sm:text-2xl md:text-3xl lg:text-4xl flex flex-col"
+            className="text-2xl sm:text-2xl md:text-3xl lg:text-4xl flex flex-col space-y-2"
           >
             <TypewriterEffect words={word1} />
             <TypewriterEffect words={word2} />
