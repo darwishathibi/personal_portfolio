@@ -5,8 +5,8 @@ import { BentoGrid, BentoGridItem } from "../components/ui/bento-grid";
 export default function BentoGridDemo() {
   return (
     <>
-      <div className="border-solid h-full w-full my-96 relative h-full">
-        <div className="text-xl sm:text-xl md:text-2xl lg:text-4xl xl:text-5xl flex justify-center items-center">
+      <div className="border-solid w-full py-20 relative h-full">
+        <div className="text-2xl sm:text-2xl md:text-3xl lg:text-5xl xl:text-5xl flex justify-center items-center">
           <p className="mb-32">
             things i <span className="text-indigo-500">made</span>...
           </p>
