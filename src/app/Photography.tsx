@@ -21,8 +21,8 @@ const specialWords2 = ["go!"];
 export default function Photography() {
   return (
     <div className="w-full h-full">
-      <div className="flex justify-center items-center text-xl sm:text-xl md:text-2xl lg:text-4xl xl:text-5xl ">
-        <p className="mb-32">
+      <div className="flex justify-center items-center text-2xl sm:text-2xl md:text-3xl lg:text-5xl xl:text-5xl pt-20">
+        <p>
           &quot;ooooh, <span className="text-indigo-500">photography</span>{" "}
           magic!&quot;
         </p>
@@ -33,7 +33,7 @@ export default function Photography() {
             <img
               src="https://firebasestorage.googleapis.com/v0/b/testauth-99b64.appspot.com/o/DRWS6826.JPG?alt=media&token=fc049663-36ba-4006-a8c7-0f64b87f9917"
               alt="photography-image"
-              className="w-[15rem] sm:w-[20rem] md:w-[30rem] lg:w-[40rem] rounded-2xl hover:scale-110 transition duration-300"
+              className="w-80 sm:w-80 md:w-[30rem] lg:w-[40rem] rounded-2xl hover:scale-110 transition duration-300"
             />
           </div>
           <p className="text-[10px] sm:text-xs md:text-sm">
@@ -41,10 +41,10 @@ export default function Photography() {
             <span className="text-indigo-500">Ampang Park.</span>
           </p>
         </div>
-        <div className="text-lg sm:text-xl md:text-2xl lg:text-4xl xl:text-5xl p-0 w-5/12 tracking-wider">
+        <div className="text-2xl sm:text-2xl md:text-3xl lg:text-5xl xl:text-5xl lg:w-5/12 mx-10 tracking-wider">
           <TextGenerateEffect words={sentences} specialWords={specialWords} />
           <Link href={"/photography"}>
-            <div className="mt-56 w-fit hover:border-b-2 border-indigo-500  ">
+            <div className="mt-40 w-fit hover:border-b-2 border-indigo-500  ">
               <TextGenerateEffect
                 words={sentences2}
                 specialWords={specialWords2}
