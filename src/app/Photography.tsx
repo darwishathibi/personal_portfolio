@@ -21,13 +21,13 @@ const specialWords2 = ["go!"];
 export default function Photography() {
   return (
     <div className="w-full h-full">
-      <div className="flex justify-center items-center text-2xl sm:text-2xl md:text-3xl lg:text-5xl xl:text-5xl my-52">
+      <div className="flex justify-center items-center text-2xl sm:text-2xl md:text-3xl lg:text-5xl xl:text-5xl mt-52 ">
         <p>
           &quot;ooooh, <span className="text-indigo-500">photography</span>{" "}
           magic!&quot;
         </p>
       </div>
-      <div className="flex flex-col sm:flex-col md:flex-col lg:flex-row items-center justify-evenly h-full relative p-10">
+      <div className="flex flex-col sm:flex-col md:flex-col lg:flex-row items-center justify-evenly h-full relative px-8 py-20 lg:py-52">
         <div>
           <div className="overflow-hidden rounded-2xl">
             <img
