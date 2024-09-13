@@ -5,14 +5,14 @@ export default function Contact() {
   return (
     <div className="w-full h-full">
       <section className="my-52">
-        <div className="text-2xl sm:text-2xl md:text-3xl lg:text-5xl xl:text-5xl flex justify-center items-center">
+        <div className="text-2xl sm:text-2xl md:text-3xl lg:text-5xl xl:text-5xl flex justify-center items-center mb-24">
           <p>
             &quot;can <span className="text-indigo-500">contact</span>{" "}
             me...&quot;
           </p>
         </div>
         <div className="h-fullflex justify-center">
-          <div className="grid min-h-[200px] place-content-center flex justify-center space-y-14 pt-14">
+          <div className="grid min-h-[200px] place-content-center flex justify-center space-y-14">
             <a
               href="https://www.instagram.com/darwishathibi/"
               target="_blank"
