@@ -61,7 +61,7 @@ export default function Intro() {
       animate="visible"
       variants={fadeInUpVariants}
       transition={{ duration: 0.5 }}
-      className="flex justify-evenly items-center flex-col md:flex-row  px-4 sm:px-6 md:px-8 py-12 md:py-16 lg:py-24 min-h-screen w-full"
+      className="flex justify-evenly items-center flex-col md:flex-row px-4 sm:px-6 md:px-8 py-12 md:py-16 lg:py-24 min-h-screen w-full"
     >
       <motion.section
         id="avatar"
