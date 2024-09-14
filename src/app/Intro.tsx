@@ -45,7 +45,7 @@ const word4 = [
     className: "text-indigo-500",
   },
   {
-    text: "Enthusiastic.",
+    text: "Enthusiast.",
   },
 ];
 
