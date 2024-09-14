@@ -51,7 +51,7 @@ export const TracingBeam = ({
       ref={ref}
       className={cn("relative w-full mx-auto h-full", className)}
     >
-      <div className="absolute top-6">
+      <div className="absolute top-10 xl:ml-20">
         <motion.div
           transition={{
             duration: 0.2,
@@ -61,7 +61,7 @@ export const TracingBeam = ({
             boxShadow:
               scrollYProgress.get() > 0
                 ? "none"
-                : "rgba(0, 0, 0, 0.24) 0px 3px 8px",
+                : "rgba(0, 0, 0, 0.24) 0px 3px 10px",
           }}
           className="ml-[19px] h-4 w-4 rounded-full border border-netural-200 shadow-sm flex items-center justify-center"
         >
