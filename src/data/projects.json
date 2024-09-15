@@ -1,29 +1,33 @@
 [
   {
-    "title": "Project 1",
-    "description": "This is a project description",
+    "title": "Personal Portfolio",
+    "description": "A showcase of my photography and development skills. This project highlights my work, user-friendly interface. Optimized for performance, it reflects my ability to merge creativity with technical precision.",
     "frameworks": ["Next.js", "Tailwind CSS", "Framer Motion"],
-    "github": "https://github.com/darwishshathibi?tab=overview&from=2024-08-01&to=2024-08-22",
-    "demo": "https://github.com/darwishshathibi?tab=overview&from=2024-08-01&to=2024-08-22",
-    "imageURI": "https://firebasestorage.googleapis.com/v0/b/testauth-99b64.appspot.com/o/DSC06657.JPG?alt=media&token=94b286aa-195b-437f-aa3d-bff776d7a431"
+    "github": "https://github.com/darwishathibi/personal_portfolio",
+    "demo": "https://darwishathibi-portfolio.vercel.app/",
+    "imageURI": "https://firebasestorage.googleapis.com/v0/b/testauth-99b64.appspot.com/o/projects%2F1.jpg?alt=media&token=e4917ba5-8c94-486e-b18d-cccf29c438db"
   },
   { 
-    "title": "Project 2",
-    "description": "This is a project description",
-    "frameworks": ["Next.js", "Tailwind CSS"],
-    "imageURI": "gs://testauth-99b64.appspot.com/DSC06657.JPG"
+    "title": "RM 1 Campaign",
+    "description": "A dynamic class project focused on driving engagement for the RM1 campaign. This initiative utilized targeted strategies to boost awareness and participation, reflecting my ability to create impactful, results-driven campaigns.",
+    "frameworks": ["HTML", "CSS", "JavaScript"],
+    "github": "https://github.com/darwishathibi/Project-Web-Tech",
+    "imageURI": "https://firebasestorage.googleapis.com/v0/b/testauth-99b64.appspot.com/o/projects%2F2.jpg?alt=media&token=31a32f42-95a4-4c86-b82e-3efbb48800e4"
+    
   },
   {
-    "title": "Project 3",
-    "description": "This is a project description",
-    "frameworks": ["Next.js", "Tailwind CSS", "Framer Motion", "React"],
-    "imageURI": "https://www.shutterstock.com/shutterstock/photos/2252985323/display_1500/stock-vector-programmers-copying-and-pasting-code-instead-of-coding-it-industry-problems-funny-meme-for-social-2252985323.jpg"
+    "title": "Mahallah Siddiq Website",
+    "description": "A professionally designed website for Mahallah Siddiq for class assignment, featuring a modern and intuitive interface. Developed to enhance online presence and user experience, this project showcases my skills in web design and development.",
+    "frameworks": ["HTML", "CSS", "JavaScript"],
+    "github": "https://github.com/darwishathibi/personal_portfolio",
+    "imageURI": "https://firebasestorage.googleapis.com/v0/b/testauth-99b64.appspot.com/o/projects%2F3.jpg?alt=media&token=1244369c-4557-4e46-a695-d60e7f11e430"
   },
   {
-    "title": "Project 4",
-    "description": "This is a project description",
-    "frameworks": ["Next.js", "Tailwind CSS", "Framer Motion", "React"],
-    "imageURI": "https://www.shutterstock.com/shutterstock/photos/2252985323/display_1500/stock-vector-programmers-copying-and-pasting-code-instead-of-coding-it-industry-problems-funny-meme-for-social-2252985323.jpg"
+    "title": "Personal CTF Writeup",
+    "description": "A personal CTF write-up collection for me (actually play CTF for long time, I just realized I don't have my personal write-up).",
+    "frameworks": ["Markdown"],
+    "github": "https://github.com/darwishathibi/personal_portfolio",
+    "imageURI": "https://firebasestorage.googleapis.com/v0/b/testauth-99b64.appspot.com/o/projects%2F4.jpg?alt=media&token=631838fc-892d-452d-8cae-3de4b773655e"
   }
 ]
   
