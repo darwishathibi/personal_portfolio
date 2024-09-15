@@ -14,9 +14,9 @@ const specialWords = [
   "6a.",
 ];
 
-const sentences2 = "Let's go!";
+const sentences2 = "Checkout more!";
 
-const specialWords2 = ["go!"];
+const specialWords2 = ["more!"];
 
 export default function Photography() {
   return (
@@ -38,13 +38,13 @@ export default function Photography() {
           </div>
           <p className="text-[10px] sm:text-xs md:text-sm">
             a <span className="text-indigo-500">family</span> on a{" "}
-            <span className="text-indigo-500">rocks.</span>
+            <span className="text-indigo-500">breakwater.</span>
           </p>
         </div>
         <div className="text-2xl sm:text-2xl md:text-3xl lg:text-5xl xl:text-5xl lg:w-5/12 mt-10 lg:m-0 tracking-wider">
           <TextGenerateEffect words={sentences} specialWords={specialWords} />
-          <Link href={"/photography"}>
-            <div className="mt-40 w-fit hover:border-b-2 border-indigo-500  ">
+          <Link href={"/maintenance"}>
+            <div className="mt-40 w-fit hover:border-b-2 border-indigo-500">
               <TextGenerateEffect
                 words={sentences2}
                 specialWords={specialWords2}
