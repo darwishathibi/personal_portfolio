@@ -28,6 +28,13 @@
     "frameworks": ["Markdown"],
     "github": "https://github.com/darwishathibi/personal_portfolio",
     "imageURI": "https://firebasestorage.googleapis.com/v0/b/testauth-99b64.appspot.com/o/projects%2F4.jpg?alt=media&token=631838fc-892d-452d-8cae-3de4b773655e"
+  },
+  {
+    "title": "Dialybook Website Design",
+    "description": "A user-friendly platform for class assignment that allows patients to easily book dialysis treatments at the nearest hospital or clinic, ensuring timely access to critical care and streamlining the scheduling process for healthcare providers.",
+    "frameworks": ["Figma"],
+    "github": "https://www.figma.com/design/TV5PAekyPZXo939bcgHWrY/Dialysis-Booking-System?node-id=0-1&t=iugy4R0l4DZI4J2l-1",
+    "imageURI": "https://firebasestorage.googleapis.com/v0/b/testauth-99b64.appspot.com/o/projects%2Ffigma.jpg?alt=media&token=92f94921-7acd-43b6-9860-f8670648c82a"
   }
 ]
   
