@@ -54,9 +54,7 @@ export const HoverEffect = ({
     >
       {items.map((item, idx) => (
         <motion.div key={item?.link} variants={itemVariants}>
-          <Link
-            target="_blank"
-            href={item?.link}
+          <div
             className="relative group block p-2 h-full w-full"
             onMouseEnter={() => setHoveredIndex(idx)}
             onMouseLeave={() => setHoveredIndex(null)}
@@ -81,7 +79,7 @@ export const HoverEffect = ({
             <Card>
               <CardTitle>{item.title}</CardTitle>
             </Card>
-          </Link>
+          </div>
         </motion.div>
       ))}
     </motion.div>
