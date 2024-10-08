@@ -5,14 +5,14 @@
     "frameworks": ["Next.js", "Tailwind CSS", "Framer Motion"],
     "github": "https://github.com/darwishathibi/personal_portfolio",
     "demo": "https://darwishathibi-portfolio.vercel.app/",
-    "imageURI": "https://firebasestorage.googleapis.com/v0/b/testauth-99b64.appspot.com/o/projects%2F1.jpg?alt=media&token=e4917ba5-8c94-486e-b18d-cccf29c438db"
+    "imageURI": "https://xbodhzbvucbyooxotirc.supabase.co/storage/v1/object/sign/portfolio/projects/1.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwb3J0Zm9saW8vcHJvamVjdHMvMS5wbmciLCJpYXQiOjE3MjgzODgxNzUsImV4cCI6MjA0Mzc0ODE3NX0.Nn4mUmzClanXfM31ZOhKEPwNBA5niQ7PqhijtJ22ggw&t=2024-10-08T11%3A49%3A35.548Z"
   },
   { 
     "title": "RM 1 Campaign",
     "description": "A dynamic class project focused on driving engagement for the RM1 campaign. This initiative utilized targeted strategies to boost awareness and participation, reflecting my ability to create impactful, results-driven campaigns.",
     "frameworks": ["HTML", "CSS", "JavaScript"],
     "github": "https://github.com/darwishathibi/Project-Web-Tech",
-    "imageURI": "https://firebasestorage.googleapis.com/v0/b/testauth-99b64.appspot.com/o/projects%2F2.jpg?alt=media&token=31a32f42-95a4-4c86-b82e-3efbb48800e4"
+    "imageURI": "https://xbodhzbvucbyooxotirc.supabase.co/storage/v1/object/sign/portfolio/projects/2.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwb3J0Zm9saW8vcHJvamVjdHMvMi5wbmciLCJpYXQiOjE3MjgzODc2MTYsImV4cCI6MjA0Mzc0NzYxNn0.voETKh5i7I8gStYZgCkxRZCC82s8gqPwW19Rp-lO8CY&t=2024-10-08T11%3A40%3A16.280Z"
     
   },
   {
@@ -20,21 +20,21 @@
     "description": "A professionally designed website for Mahallah Siddiq for class assignment, featuring a modern and intuitive interface. Developed to enhance online presence and user experience, this project showcases my skills in web design and development.",
     "frameworks": ["HTML", "CSS", "JavaScript"],
     "github": "https://github.com/darwishathibi/personal_portfolio",
-    "imageURI": "https://firebasestorage.googleapis.com/v0/b/testauth-99b64.appspot.com/o/projects%2F3.jpg?alt=media&token=1244369c-4557-4e46-a695-d60e7f11e430"
+    "imageURI": "https://xbodhzbvucbyooxotirc.supabase.co/storage/v1/object/sign/portfolio/projects/3.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwb3J0Zm9saW8vcHJvamVjdHMvMy5wbmciLCJpYXQiOjE3MjgzODc2MzMsImV4cCI6MjA0Mzc0NzYzM30.oUUhTt3pICWeNAtPbprTIKzeNzQbUpVGkOxRFvEmuoY&t=2024-10-08T11%3A40%3A33.580Z"
   },
   {
     "title": "Personal CTF Writeup",
     "description": "A personal CTF write-up collection for me (actually play CTF for long time, I just realized I don't have my personal write-up).",
     "frameworks": ["Markdown"],
     "github": "https://github.com/darwishathibi/personal_portfolio",
-    "imageURI": "https://firebasestorage.googleapis.com/v0/b/testauth-99b64.appspot.com/o/projects%2F4.jpg?alt=media&token=631838fc-892d-452d-8cae-3de4b773655e"
+    "imageURI": "https://xbodhzbvucbyooxotirc.supabase.co/storage/v1/object/sign/portfolio/projects/4.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwb3J0Zm9saW8vcHJvamVjdHMvNC5wbmciLCJpYXQiOjE3MjgzODc2NTAsImV4cCI6MjA0Mzc0NzY1MH0.kAQnvv_gxxuhVLvitQl2aNg02sv6EpTsr83SqwlGhVk&t=2024-10-08T11%3A40%3A50.688Z"
   },
   {
     "title": "Dialybook Website Design",
     "description": "A user-friendly platform for class assignment that allows patients to easily book dialysis treatments at the nearest hospital or clinic, ensuring timely access to critical care and streamlining the scheduling process for healthcare providers.",
     "frameworks": ["Figma"],
     "github": "https://www.figma.com/design/TV5PAekyPZXo939bcgHWrY/Dialysis-Booking-System?node-id=0-1&t=iugy4R0l4DZI4J2l-1",
-    "imageURI": "https://firebasestorage.googleapis.com/v0/b/testauth-99b64.appspot.com/o/projects%2Ffigma.jpg?alt=media&token=92f94921-7acd-43b6-9860-f8670648c82a"
+    "imageURI": "https://xbodhzbvucbyooxotirc.supabase.co/storage/v1/object/sign/portfolio/projects/5.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwb3J0Zm9saW8vcHJvamVjdHMvNS5wbmciLCJpYXQiOjE3MjgzODc2NjcsImV4cCI6MjA0Mzc0NzY2N30.EqxiTsqe9SK5C-l43YUSe_HewzXB0ID_bVLmj5s7gpQ&t=2024-10-08T11%3A41%3A07.244Z"
   }
 ]
   

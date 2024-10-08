@@ -31,7 +31,7 @@ export default function Photography() {
         <div>
           <div className="overflow-hidden rounded-2xl">
             <img
-              src="https://firebasestorage.googleapis.com/v0/b/testauth-99b64.appspot.com/o/photo_2024-09-13_02-32-32.jpg?alt=media&token=ab268c69-f2ef-460d-9ccc-6f1e70f45e62"
+              src="https://xbodhzbvucbyooxotirc.supabase.co/storage/v1/object/sign/portfolio/projects/DRWS8272%20(3).jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwb3J0Zm9saW8vcHJvamVjdHMvRFJXUzgyNzIgKDMpLmpwZyIsImlhdCI6MTcyODM4ODA3NSwiZXhwIjoyMDQzNzQ4MDc1fQ.SADR8k8RS7FOT36PM4J3efgW7G96vL2-A8Ek26Al32I&t=2024-10-08T11%3A47%3A55.020Z"
               alt="photography-image"
               className="w-80 sm:w-80 md:w-[30rem] lg:w-[30rem] rounded-2xl hover:scale-110 transition duration-300"
             />
