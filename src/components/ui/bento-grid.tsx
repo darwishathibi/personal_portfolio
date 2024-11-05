@@ -46,7 +46,7 @@ export const BentoGridItem = ({
       )}
     >
       <div className="w-full md:h-80 rounded-2xl">
-        <Image
+        <img
           //@ts-ignore
           src={imageURI}
           alt="project-image"

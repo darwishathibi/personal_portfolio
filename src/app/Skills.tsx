@@ -74,5 +74,9 @@ export const projects = [
     title: "Boostrap",
     link: "https://getbootstrap.com",
   },
+  {
+    title: "Sanity.io",
+    link: "https://getbootstrap.com",
+  },
 ];
 
