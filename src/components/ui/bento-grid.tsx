@@ -45,12 +45,14 @@ export const BentoGridItem = ({
         className
       )}
     >
-      <div className="w-full md:h-80 rounded-2xl">
+      <div className="w-full md:h-80 rounded-2xl overflow-hidden">
         <img
-          //@ts-ignore
-          src={imageURI}
+          src={imageURI || ""}
           alt="project-image"
-          className="rounded-2xl h-full w-full border border-white/20"
+          // layout="responsive"
+          width={700}
+          height={475}
+          className="rounded-2xl h-full w-full object-cover border border-white/20"
         />
       </div>
       <div className="group-hover/bento:translate-x-2 transition duration-200">
