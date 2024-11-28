@@ -1,4 +1,4 @@
-import Header from "../components/Header";
+import FollowCursor from "../components/ui/followCurser";
 import Footer from "../components/Footer";
 import Intro from "./Intro";
 import About from "./About";
@@ -21,6 +21,7 @@ export default function Home() {
         <Contact />
         <Footer />
       </main>
+      <FollowCursor />
     </TracingBeam>
   );
 }
