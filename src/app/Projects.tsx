@@ -1,13 +1,12 @@
 import React from "react";
 import { TextGenerateEffect } from "../components/ui/text-generate-effect";
 import { BentoGrid, BentoGridItem } from "../components/ui/bento-grid";
-import { getProjects } from "@/components/server/projectsData";
+import projectsData from "../data/projects.json";
 
 const sentences = "things i made...";
 const specialWords = ["made..."];
 
 export default async function BentoGridDemo() {
-  const posts = await getProjects();
    return (
      <div className="border-solid w-full py-20 relative h-full">
        <div className="text-2xl sm:text-2xl md:text-3xl lg:text-5xl xl:text-5xl flex justify-center items-center">
@@ -16,16 +15,16 @@ export default async function BentoGridDemo() {
          </div>
        </div>
        <BentoGrid className="mx-auto order-solid px-8">
-         {posts.map((post, index) => (
+         {projectsData.map((item, i) => (
            <BentoGridItem
-             key={post._id || `post-${index}`}
-             title={post.title}
-             description={post.desc}
+             key={i}
+             title={item.title}
+             description={item.description}
              className=""
-             imageURI={post.imageUrl}
-             frameworks={post.frameworks}
-             github={post.githubUrl}
-             demo={post.liveUrl}
+             imageURI={item.imageURI}
+             frameworks={item.frameworks}
+             github={item.github}
+             demo={item.demo}
            />
          ))}
        </BentoGrid>
