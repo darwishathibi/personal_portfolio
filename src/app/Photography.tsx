@@ -1,10 +1,10 @@
 "use client";
 import Link from "next/link";
 import { TextGenerateEffect } from "../components/ui/text-generate-effect";
+import BoxReveal from "../components/ui/magic/box-reveal-text";
 
 const sentences =
   "Hey there! My hobby? Photography! I'm currently having a blast with my Fujifilm X-T20 and snapping away with my Google Pixel 6a.";
-
 const specialWords = [
   "Photography!",
   "Fujifilm",
@@ -13,19 +13,18 @@ const specialWords = [
   "Pixel",
   "6a.",
 ];
-
 const sentences2 = "Checkout more!";
-
 const specialWords2 = ["more!"];
+const sentences3 = "oooooh, photography magic!";
+const specialWords3 = ["photography"];
+
+let wordsArray = sentences.split(" ");
 
 export default function Photography() {
   return (
     <div className="w-full h-full">
       <div className="flex justify-center items-center text-2xl sm:text-2xl md:text-3xl lg:text-5xl xl:text-5xl mt-52 ">
-        <p>
-          &quot;ooooh, <span className="text-indigo-500">photography</span>{" "}
-          magic!&quot;
-        </p>
+        <TextGenerateEffect words={sentences3} specialWords={specialWords3} />
       </div>
       <div className="flex flex-col sm:flex-col md:flex-col lg:flex-row items-center justify-evenly h-full relative px-8 py-20 lg:py-52">
         <div>
@@ -42,7 +41,20 @@ export default function Photography() {
           </p>
         </div>
         <div className="text-2xl sm:text-2xl md:text-3xl lg:text-5xl xl:text-5xl lg:w-5/12 mt-10 lg:m-0 tracking-wider">
-          <TextGenerateEffect words={sentences} specialWords={specialWords} />
+          <BoxReveal boxColor={"#5046e6"} duration={0.5}>
+            <p className="font-semibold py-1">
+              {wordsArray.map((word, i) => {
+                const className = specialWords.includes(word)
+                  ? "text-indigo-500 font-bold "
+                  : "text-white ";
+                return (
+                  <span key={i} className={className}>
+                    {word}{" "}
+                  </span>
+                );
+              })}
+            </p>
+          </BoxReveal>
           <Link href={"/maintenance"}>
             <div className="mt-40 w-fit hover:border-b-2 border-indigo-500">
               <TextGenerateEffect

@@ -32,7 +32,8 @@ const FollowCursor: React.FC<FollowCursorProps> = ({ color = "#6366f1" }) => {
       moveTowards(x: number, y: number, context: CanvasRenderingContext2D) {
         this.position.x += (x - this.position.x) / this.lag;
         this.position.y += (y - this.position.y) / this.lag;
-        context.fillStyle = color;
+        context.strokeStyle = color;
+        context.lineWidth = 1;
         context.beginPath();
         context.arc(
           this.position.x,
@@ -41,7 +42,7 @@ const FollowCursor: React.FC<FollowCursorProps> = ({ color = "#6366f1" }) => {
           0,
           2 * Math.PI
         );
-        context.fill();
+        context.stroke();
         context.closePath();
       }
     }

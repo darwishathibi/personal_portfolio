@@ -1,6 +1,19 @@
-"use client";
+
 import { cn } from "../lib/utils";
-import { Image } from "@unpic/react";
+import { type SanityDocument } from "next-sanity";
+
+import { client } from "@/sanity/client";
+
+const POSTS_QUERY = `*[_type == "post"] {
+        title,
+        "imageUrl": image.asset->url,
+        desc,
+        frameworks,
+        githubUrl,
+        liveUrl
+      }`;
+
+const options = { next: { revalidate: 30 } };
 
 export const BentoGrid = ({
   className,
@@ -49,7 +62,6 @@ export const BentoGridItem = ({
         <img
           src={imageURI || ""}
           alt="project-image"
-          // layout="responsive"
           width={700}
           height={475}
           className="rounded-2xl h-full w-full object-cover border border-white/20"

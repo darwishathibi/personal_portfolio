@@ -1,15 +1,17 @@
 "use client";
 import { HoverEffect } from "../components/ui/card-hover-effect";
+import { TextGenerateEffect } from "../components/ui/text-generate-effect";
 
 export default function Skills() {
+  const sentences = "skills that i have...";
+  const specialWords = ["skills", "have..."];
   return (
     <div className="w-full h-full">
       <section className="flex flex-col justify-center items-center">
         <div className="text-2xl sm:text-2xl md:text-3xl lg:text-5xl xl:text-5xl">
-          <p className="mb-20 mt-48">
-            &quot;skills <span className="text-indigo-500">that i have</span>
-            ...&quot;
-          </p>
+          <div className="mb-20 mt-48">
+            <TextGenerateEffect words={sentences} specialWords={specialWords} />
+          </div>
         </div>
         <div className="h-full">
           <div className="max-w-5xl mx-auto px-8">

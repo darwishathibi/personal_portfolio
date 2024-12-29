@@ -1,3 +1,5 @@
+"use client";
+
 import FollowCursor from "../components/ui/followCurser";
 import Footer from "../components/Footer";
 import Intro from "./Intro";
@@ -6,12 +8,23 @@ import Projects from "./Projects";
 import Photography from "./Photography";
 import Skills from "./Skills";
 import Contact from "./Contact";
+import React, { useEffect } from "react";
+import Lenis from "lenis";
 
 import { TracingBeam } from "@/components/ui/tracing-beam";
 
 export default function Home() {
+  useEffect(() => {
+    const lenis = new Lenis();
+    function raf(time: any) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+  }, []);
+
   return (
-    <TracingBeam className="h-full bg-zinc-900 bg-[radial-gradient(#27272a_1px,transparent_2px)] [background-size:16px_16px] overflow-hidden">
+    <TracingBeam className="bg-zinc-900 bg-[linear-gradient(#27272a_0.5px,transparent_1px),linear-gradient(to_right,#27272a_1px,transparent_1px)] [background-size:50px_50px]">
       <main className="text-white font-sf tracking-widest flex min-h-screen flex-col items-center justify-between">
         <Intro />
         <About />
