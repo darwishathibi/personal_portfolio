@@ -10,10 +10,13 @@ const POSTS_QUERY = `*[_type == "post"] {
         liveUrl
       }`;
 
-export async function getProjects() {
-  return client.fetch<SanityDocument[]>(
+export default async function getProjects() {
+  const posts = client.fetch<SanityDocument[]>(
     POSTS_QUERY,
     {},
     { next: { revalidate: 30 } }
   );
+
+  // console.log(posts);
+  return posts;
 }
