@@ -28,6 +28,10 @@ module.exports = {
       colors: {
         'black-russian': '#161618',
         'green-idk': '#5C8374',
+        'deep-jungle-green': '#0d4949',
+        'middle-green-yellow': '#A4C24F',
+        'spanish-orange': '#DB611D',
+        'beige': '#F6F6E3',
       },
     },
   },

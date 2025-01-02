@@ -70,7 +70,7 @@ const LogoRolodex = ({ items }: { items: ReactElement[] }) => {
         transform: "rotateY(-20deg)",
         transformStyle: "preserve-3d",
       }}
-      className="relative z-0 h-44 w-60 shrink-0 rounded-xl border border-neutral-700 bg-neutral-800"
+      className="relative z-0 h-44 w-60 shrink-0 rounded-xl bg-neutral-800"
     >
       <AnimatePresence mode="sync">
         <motion.div

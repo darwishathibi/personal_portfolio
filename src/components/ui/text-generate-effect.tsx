@@ -40,7 +40,7 @@ export const TextGenerateEffect = ({
       <motion.div ref={scope}>
         {wordsArray.map((word, idx) => {
           const className = specialWords.includes(word)
-            ? "text-indigo-500 font-bold opacity-0"
+            ? "text-middle-green-yellow font-bold opacity-0"
             : "text-white opacity-0";
 
           return (

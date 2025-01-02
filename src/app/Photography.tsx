@@ -36,16 +36,16 @@ export default function Photography() {
             />
           </div>
           <p className="text-[10px] sm:text-xs md:text-sm">
-            a <span className="text-indigo-500">family</span> on a{" "}
-            <span className="text-indigo-500">breakwater.</span>
+            a <span className="text-middle-green-yellow">family</span> on a{" "}
+            <span className="text-middle-green-yellow">breakwater.</span>
           </p>
         </div>
         <div className="text-2xl sm:text-2xl md:text-3xl lg:text-5xl xl:text-5xl lg:w-5/12 mt-10 lg:m-0 tracking-wider">
-          <BoxReveal boxColor={"#5046e6"} duration={0.5}>
+          <BoxReveal boxColor={"#A4C24F"} duration={0.5}>
             <p className="font-semibold py-1">
               {wordsArray.map((word, i) => {
                 const className = specialWords.includes(word)
-                  ? "text-indigo-500 font-bold "
+                  ? "text-middle-green-yellow font-bold "
                   : "text-white ";
                 return (
                   <span key={i} className={className}>

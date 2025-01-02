@@ -1,19 +1,4 @@
-
 import { cn } from "../lib/utils";
-import { type SanityDocument } from "next-sanity";
-
-import { client } from "@/sanity/client";
-
-const POSTS_QUERY = `*[_type == "post"] {
-        title,
-        "imageUrl": image.asset->url,
-        desc,
-        frameworks,
-        githubUrl,
-        liveUrl
-      }`;
-
-const options = { next: { revalidate: 30 } };
 
 export const BentoGrid = ({
   className,
@@ -54,7 +39,7 @@ export const BentoGridItem = ({
   return (
     <div
       className={cn(
-        "row-span-1 rounded-xl group/bento hover:shadow-xl transition duration-200 shadow-input shadow-none p-4 border-white/[0.2] bg-zinc-800 border border-white/40 flex flex-col space-y-4",
+        "row-span-1 rounded-xl group/bento hover:shadow-xl transition duration-200 shadow-input shadow-none p-4 border-white/[0.2] bg-[#F6F6E3] flex flex-col space-y-4",
         className
       )}
     >
@@ -78,7 +63,7 @@ export const BentoGridItem = ({
           {frameworks?.map((framework, i) => (
             <div
               key={i}
-              className="text-xs md:text-sm bg-stone-700 text-stone-100 px-3 py-1 rounded-full flex items-center mr-1 my-1"
+              className="text-xs md:text-sm bg-[#FBC948] text-stone-100 px-3 py-1 rounded-full flex items-center mr-1 my-1"
             >
               {framework}
             </div>
@@ -89,7 +74,7 @@ export const BentoGridItem = ({
             href={github}
             target="_blank"
             rel="noreferrer"
-            className="space-x-2 bg-indigo-500 text-white px-2 py-1 rounded-full"
+            className="space-x-2 bg-deep-jungle-green text-white px-2 py-1 rounded-full"
           >
             See on Github
           </a>
@@ -98,7 +83,7 @@ export const BentoGridItem = ({
               href={demo}
               target="_blank"
               rel="noreferrer"
-              className="space-x-2 bg-indigo-500 text-white px-2 py-1 rounded-full"
+              className="space-x-2 bg-deep-jungle-green text-white px-2 py-1 rounded-full"
             >
               View Demo
             </a>

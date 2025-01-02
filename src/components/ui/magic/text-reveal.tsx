@@ -40,7 +40,7 @@ export const TextRevealByWord: FC<TextRevealByWordProps> = ({
             const start = i / words.length;
             const end = start + 1 / words.length;
             const isSpecial = specialWords.includes(word)
-              ? "text-indigo-500 font-bold"
+              ? "text-middle-green-yellow font-bold"
               : "text-white";
             return (
               <Word key={i} progress={scrollYProgress} range={[start, end]} classname={isSpecial}>

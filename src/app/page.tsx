@@ -24,7 +24,7 @@ export default function Home() {
   }, []);
 
   return (
-    <TracingBeam className="bg-zinc-900 bg-[linear-gradient(#27272a_0.5px,transparent_1px),linear-gradient(to_right,#27272a_1px,transparent_1px)] [background-size:50px_50px]">
+    <main className="bg-deep-jungle-green bg-[radial-gradient(circle,#A4C24F_1px,transparent_1px)] [background-size:150px_150px]">
       <main className="text-white font-sf tracking-widest flex min-h-screen flex-col items-center justify-between">
         <Intro />
         <About />
@@ -35,6 +35,6 @@ export default function Home() {
         <Footer />
       </main>
       <FollowCursor />
-    </TracingBeam>
+    </main>
   );
 }

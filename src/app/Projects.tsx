@@ -14,7 +14,7 @@ export default async function BentoGridDemo() {
            <TextGenerateEffect words={sentences} specialWords={specialWords} />
          </div>
        </div>
-       <BentoGrid className="mx-auto order-solid px-8">
+       <BentoGrid className="mx-auto order-solid px-8 text-deep-jungle-green">
          {projectsData.map((item, i) => (
            <BentoGridItem
              key={i}
